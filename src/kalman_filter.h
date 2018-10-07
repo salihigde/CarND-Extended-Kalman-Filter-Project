@@ -3,6 +3,12 @@
 #include "Eigen/Dense"
 
 class KalmanFilter {
+private:
+   /**
+   * Normalize angles
+   * @param y The non normalized angle
+   */
+  void NormalizeAngle(Eigen::VectorXd &y);
 public:
 
   // state vector
